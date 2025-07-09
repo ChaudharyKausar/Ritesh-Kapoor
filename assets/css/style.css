@@ -2218,7 +2218,7 @@ Hero  Section Started
 .slider-navigations button {
     position: absolute;
     top: 50%;
-    color: #fff;
+    color: #000;
     z-index: 20;
     border: none;
     height: 40px;
@@ -2227,7 +2227,7 @@ Hero  Section Started
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #323235;
+    background: #fff;
     transform: translateY(-50%);
     transition: 0.4s ease;
 }
