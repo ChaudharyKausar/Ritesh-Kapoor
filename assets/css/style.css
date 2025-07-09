@@ -5,16 +5,16 @@
 :root {
     --font-fahkwang: "Fahkwang", sans-serif;
     --font-unbounded: "Unbounded", sans-serif;
-    --primary-color: #074118;
-    /* --primary-color2: #059045; */
-    --primary-color3: #1E5430;
+    --primary-color: #08254F;
+    --primary-color2: #0078FF;
+    --primary-color3: #0C2E5E;
     /* --primary-color4: #059045; */
     --title-color: #1A1A1A;
     --title-color-opc: 26, 26, 26;
     --dark-title-color: #1A1A1A;
     --white-color: #fff;
     ---dark-white-color: #fff;
-    --deep-white-color: #F8F9FB;
+    --deep-white-color: #F4F5F9;
     --paragraph-color: #545454;
     --paragraph-color-opc: 84, 84, 84;
     --paragraph-color2: #363636;
