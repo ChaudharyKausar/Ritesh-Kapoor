@@ -1,0 +1,1006 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="assets/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>B2B Digital Marketing Agency for Boosting ROI | The 4P Solutions</title>
+    <meta name="description"
+        content="Kickstart your Marketing success with The 4P Solutions, the B2B marketing agency that’s been giving 3X ROI to its clients! Get in touch: +91 9930020261" />
+    <link rel="canonical" href="https://the4psolutions.com" />
+    <link rel="icon" href="assets/img/4p-fevicon.svg" type="image/gif" sizes="20x20">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="preload" href="assets/img/home/Homepage-Banner.webp" as="image">
+    <link rel="preload" href="assets/img/home/4pmobile-banner.svg" as="image">
+    <!-- cache -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZSC3H1F91N"></script>
+    <style>
+        .about-banner-area {
+            background-image: url(assets/img/home/about-us-banner-new.webp), linear-gradient(#276040, #276040);
+            background-size: cover;
+            /* Ensures the image covers the container */
+            background-repeat: no-repeat;
+            background-position: center center;
+            height: 65vh;
+            max-height: 800px;
+            margin-top: 80px;
+            object-fit: cover;
+        }
+
+        @media(max-width:991px) {
+            .about-banner-area {
+                background-image: url(assets/img/home/about-us-banner-new.webp), linear-gradient(#276040, #1A1A1A) !important;
+                background-size: cover;
+                background-position: top center;
+                /* Ensures the mobile image covers the container */
+                height: 15vh;
+                /* Adjust height for smaller screens */
+                max-height: none;
+                /* Remove max-height to allow full coverage */
+            }
+        }
+
+        .form-container input[type=email] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0px;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 60vh;
+            /* Full screen height */
+            background-image: url("assets/img/home/company_image.jpg");
+            /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding: 1rem 4rem;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.658);
+            /* Overlay for better text visibility */
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content h1 {
+            font-weight: 600;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+            /* justify-content: center; */
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .social {
+            width: 40px;
+            height: 40px;
+            background: #000;
+            border-radius: 50%;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            text-decoration: none;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        /* Individual brand colors (optional) */
+        .social.youtube {
+            background: #3B5998;
+        }
+
+        .social.instagram {
+            background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf);
+        }
+
+        .social.linkedin {
+            background: #0077B5;
+        }
+
+        .social.twitter {
+            background: #000;
+        }
+
+        /* Hover effect */
+        .social:hover {
+            opacity: 0.8;
+        }
+
+        /* --------------------------------------
+        Services
+        --------------------------------------- */
+        .services {
+            background-color: #fff;
+            padding: 2rem 0;
+        }
+
+        .services i {
+            color: var(--primary-color);
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .services h4 {
+            font-size: 18px;
+        }
+
+        .services p {
+            color: var(--paragraph-color3);
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        /* --------------------------------------
+        Our team members
+        --------------------------------------- */
+        .our-team {
+            background-color: #fff;
+        }
+    </style>
+
+
+</head>
+
+<body id="body" class=" tt-magic-cursor home1-bg">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMKBJ7F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="tt-style-switch index-dark">
+        <i class="bi bi-brightness-low-fill"></i>
+    </div>
+    <div id="magic-cursor">
+        <div id="ball"></div>
+    </div>
+
+    <div class="circle-container">
+        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <g>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7.03516 0.416666L7.03516 15H8.28516L8.28516 0.416666H7.03516Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8.28516 1.04115C8.28516 3.98115 5.70016 6.38281 2.94349 6.38281H2.31849V5.13281H2.94349C5.03599 5.13281 7.03516 3.26448 7.03516 1.04115V0.416979H8.28516V1.04115Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7.03333 1.04115C7.03333 3.98115 9.61833 6.38281 12.375 6.38281H13V5.13281H12.375C10.2817 5.13281 8.28333 3.26448 8.28333 1.04115V0.416979H7.03333V1.04115Z" />
+            </g>
+        </svg>
+    </div>
+
+
+    <!-- -----------------------------------
+custom Cursor
+----------------------------------- -->
+    <!-- <div class="cursor">
+        <svg class="cursor__ball cursor__ball--big" width="30" height="30">
+            <circle cx="15" cy="15" r="15"></circle>
+        </svg>
+        <svg class="cursor__ball cursor__ball--small" width="10" height="10">
+            <circle cx="5" cy="5" r="5"></circle>
+        </svg>
+    </div> -->
+
+    <nav>
+        <div class="nav_container">
+            <div class="nav_content">
+                <div class="logo">
+                    <a href="#">Ritesh Kapoor</a>
+                </div>
+                <div class="mobile_btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="main_menu">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="about.html" class="active">About</a></li>
+                        <li class="has_dropdown"><a href="about-company.html">Company <i class="fas fa-angle-down"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="#">About Compant</a></li>
+                                <li><a href="#">Founder</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Partners</a></li>
+                            </ul>
+                        </li>
+                        <li class="mega_menu_dropdown has_dropdown">
+                            <a href="#">Services <i class="fas fa-angle-down"></i></a>
+                            <div class="mega_menu sub_menu">
+                                <!-- <div class="mega_menu_item">
+                <img src="https://via.placeholder.com/250x300">
+              </div> -->
+                                <div class="mega_menu_item">
+                                    <h3>Company Incorporation</h3>
+                                    <a href="#">Private/Public Limited Company</a>
+                                    <a href="#">LLP & Section 8 Companies</a>
+                                </div>
+                                <div class="mega_menu_item">
+                                    <h3>Foreign Company Setup</h3>
+                                    <a href="#">Liaison Office</a>
+                                    <a href="#">Branch Office</a>
+                                    <a href="#">Subsidiary</a>
+                                </div>
+                                <div class="mega_menu_item">
+                                    <h3>Taxation</h3>
+                                    <a href="#">Direct Tax</a>
+                                    <a href="#">International Taxation</a>
+                                    <a href="#">Transfer Pricing</a>
+                                    <a href="#">GST</a>
+                                </div>
+                                <div class="mega_menu_item">
+                                    <h3>Regulatory Advisory</h3>
+                                    <a href="#">RBI, FEMA Compliance</a>
+                                    <a href="#">FCRA Advisory</a>
+                                    <a href="#">SEBI Filings</a>
+                                </div>
+                                <div class="mega_menu_item">
+                                    <h3>Payroll & HR Solutions</h3>
+                                    <a href="#">Virtual CFO Services</a>
+                                    <a href="#">Accounting & Bookkeeping</a>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="has_dropdown"><a href="#">Acknowledgments <i class="fas fa-angle-down"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="#">Professional Memberships</a></li>
+                                <li><a href="#">Media Mentions</a></li>
+                                <li><a href="#">Awards & Certifications</a></li>
+                                <li><a href="#">Client Testimonials</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has_dropdown"><a href="#">Publications <i class="fas fa-angle-down"></i></a>
+                            <ul class="sub_menu">
+                                <li><a href="#">Regulatory Updates & News</a></li>
+                                <li><a href="#">Taxation Articles</a></li>
+                                <li><a href="#">Business Setup Guides</a></li>
+                                <li><a href="#">FAQs for Foreign Investors</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="fab-wrapper">
+        <p class="fab-wrapper-text">Hey hi! Need any help?</p>
+        <input id="fabCheckbox" type="checkbox" class="fab-checkbox" onclick="toggleFabAnimation()" />
+        <label class="fab" for="fabCheckbox">
+            <span class="fab-dots fab-dots-1"></span>
+            <span class="fab-dots fab-dots-2"></span>
+            <span class="fab-dots fab-dots-3"></span>
+        </label>
+        <div class="fab-wheel">
+            <a class="fab-action fab-action-1" href="https://api.whatsapp.com/send?phone=918928609451" target="_blank">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+            <a class="fab-action fab-action-2" onclick="openForm()">
+                <i class="bi bi-person-lines-fill"></i>
+            </a>
+            <a class="fab-action fab-action-3" href="tel:+918928609451">
+                <i class="bi bi-telephone-fill"></i>
+            </a>
+            <a class="fab-action fab-action-4" href="mailto:gautam@the4psolutions.com">
+                <i class="bi bi-envelope-fill"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="form-popup" id="myForm">
+        <form action="action_page.php" class="form-container set-heading" method="post"
+            enctype="application/x-www-form-urlencoded">
+            <h3>Contact Form</h3>
+
+            <label for="name"><b>Full Name</b></label>
+            <input type="text" placeholder="Enter Name" name="name" required>
+
+            <label for="company"><b>Company Name</b></label>
+            <input type="text" placeholder="Enter Company" name="company" required>
+
+            <label for="message"><b>Message</b></label>
+            <input type="text" placeholder="Enter Message" name="message" required>
+
+            <label for="number"><b>Contact Number</b></label>
+            <input type="tel" placeholder="Enter Number" name="number" required pattern="[0-9]{10}" maxlength="10"
+                minlength="10" autocomplete="tel">
+            <button type="submit" class="btn submit-btn">Submit</button>
+            <button type="button" class="btn cancel close-button " onclick="closeForm()">X</button>
+        </form>
+    </div>
+
+    <div class="form-popup" id="playbookForm">
+        <form action="playbook-action.php" class="form-container set-heading" method="post"
+            enctype="application/x-www-form-urlencoded">
+            <h3 style="font-size:30px">Download Playbook</h3>
+
+            <label for="name"><b>Full Name</b></label>
+            <input type="text" placeholder="Enter Name" name="name" required>
+
+            <label for="company"><b>Company Name</b></label>
+            <input type="text" placeholder="Enter Company" name="company" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter email" name="email" required>
+
+            <label for="number"><b>Contact Number</b></label>
+            <input type="tel" placeholder="Enter Number" name="number" required pattern="[0-9]{10}" maxlength="10"
+                minlength="10" autocomplete="tel">
+            <button type="submit" class="btn submit-btn">Submit</button>
+            <button type="button" class="btn cancel close-button " onclick="playcloseForm()">X</button>
+        </form>
+    </div>
+
+    <main class="page-content">
+
+        <div class="line_wrap">
+            <div class="line_item first-line"></div>
+            <div class="line_item center-line"></div>
+            <div class="line_item last-line"></div>
+        </div>
+
+        <!-- ------------------------------------------------
+        Hero Section swiper-container-initialized
+        ------------------------------------------------ -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Empower Your Global Growth</h1>
+                <p>Expand your business worldwide with seamless trade, marketing, and supply chain solutions. Globify
+                    makes going global simple, strategic, and successful.</p>
+                <a href="#your-link" class="btn">Learn More</a>
+            </div>
+        </section>
+
+
+        <!----------------------------------------
+        About Founder
+        -------------------------------------- -->
+        <div class="about" style="background-color: #fff;">
+            <div class="container py-5">
+                <div class="row align-items-center">
+                    <!-- Image Column -->
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <img src="assets/img/home/company_image.jpg" alt="Professional Accounting"
+                            class="img-fluid rounded">
+                    </div>
+                    <!-- Text Column -->
+                    <div class="col-md-6">
+                        <h2 class="mb-3 fw-bold" style="font-style: italic;">Globify – Grow Without Limits</h2>
+                        <h6 class="mt-1" style="color: var(--primary-color); font-weight: 600; font-style: italic;">
+                            Let’s take your business
+                            beyond limits and make it truly global.</h6>
+                        <p class="mb-4">
+                            At Globify, we help businesses cross borders, reach new customers, and build a powerful
+                            presence anywhere in the world. From smart digital marketing and brand building to
+                            hassle-free import-export solutions and supply chain support, we do everything you need to
+                            expand confidently.
+                        </p>
+                        <p>
+                            We believe success has no boundaries. That’s why our expert team works closely with you to
+                            understand your goals and create custom strategies that bring real results. Whether you’re
+                            launching a new product, entering a foreign market, or scaling your operations, Globify is
+                            your trusted partner at every step.
+                        </p>
+
+                        <!-- <ul class="list-unstyled mt-4" style="display: inline-block;">
+                            <li class="mb-2">
+                                <i class="bi bi-check2-all me-2"></i>
+                                Company Incorporation & Business Structuring
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check2-all me-2"></i>
+                                Regulatory Compliances under FEMA, RBI, SEBI, and Companies Act
+                            </li>
+                            <li>
+                                <i class="bi bi-check2-all me-2"></i>
+                                Virtual CFO and Advisory Services
+                            </li>
+                        </ul> -->
+
+                        <!-- <div class="social-icons">
+                            <a href="https://youtube.com" target="_blank" class="social youtube">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" class="social instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" class="social linkedin">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" class="social twitter">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </div> -->
+
+                        <!-- <a class="btn" href="#"><span>Horizontal Overlap</span></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------------------------------------------
+       Services 
+       ------------------------------------------------ -->
+        <div class="services">
+            <section class="py-5">
+                <div class="container">
+                    <div class="mb-5">
+                        <h2 class="fw-bold mb-2" style="color: var(--primary-color);">We Provide Solution On Your
+                            Business</h2>
+                        <p class="text-muted">Modern people know all trends and follow them. Modernity is the best,
+                            always
+                            moving forward and improving.</p>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="bi bi-award fs-1"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-semibold mb-2">Quality Services</h4>
+                                    <p class="text-muted mb-0">We provide best services for your business.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="bi bi-people fs-1"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-semibold mb-2">Clients Satisfaction</h4>
+                                    <p class="text-muted mb-0">We always focus on client satisfaction.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="bi bi-graph-up fs-1"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-semibold mb-2">Planning & Strategy</h4>
+                                    <p class="text-muted mb-0">Superior insights for business planning.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="bi bi-person-check fs-1"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-semibold mb-2">Professional Staff</h4>
+                                    <p class="text-muted mb-0">Expert team to handle your projects.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="bi bi-shield-check fs-1"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-semibold mb-2">Quality Services</h4>
+                                    <p class="text-muted mb-0">We always deliver quality work.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="bi bi-star fs-1"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-semibold mb-2">Quality Standards</h4>
+                                    <p class="text-muted mb-0">Ensuring high standards in all deliverables.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!----------------------------------------
+        About Founder
+        -------------------------------------- -->
+        <div class="about" style="background-color: #fff;">
+            <div class="container py-5">
+                <div class="row">
+                    <!-- Text Column -->
+                    <div class="col-md-6">
+                        <h3 class="mb-4 mt-2" style="font-weight: 600; font-size: 30px;">The Man Behind Globify</h3>
+                        <p>Ritesh Kapoor founded Globify to empower businesses to grow and thrive worldwide through
+                            innovative ideas, strategic vision, and an unwavering commitment to driving long-term
+                            success across industries.</p>
+                        <div class="text-button d-flex mt-2">
+                            <a href=""><button class="custom-btn btn-3 btn"><span>Read More</span></button></a>
+                        </div>
+                    </div>
+
+                    <!-- Image Column -->
+                    <div class="col-md-6 mb-4 mb-md-0 mt-4">
+                        <img src="assets/img/home/person_3_500x333.jpg" alt="Professional Accounting"
+                            class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------------------------------------
+         Team
+        -------------------------------------- -->
+        <section class="py-5 our-team">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <!-- Left: Images -->
+                    <div class="col-md-6">
+                        <div class="row g-3">
+                            <div class="col-6 d-flex flex-column justify-content-between">
+                                <img src="assets/img/home/person.jpg" alt="Team Member" class="img-fluid rounded mb-3">
+                                <img src="assets/img/home/person.jpg" alt="Team Member" class="img-fluid rounded">
+                            </div>
+                            <div class="col-6 d-flex align-items-center">
+                                <img src="assets/img/home/person.jpg" alt="Team Member" class="img-fluid rounded w-100">
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Right: Content -->
+                    <div class="col-md-6">
+                        <h2 class="mb-3" style="font-weight: 600; font-size: 30px;">The Team</h2>
+                        <p class="text-muted">
+                            All we ask is you be authentic, open and remain connected. So many when one tries in
+                            important scenarios,
+                            words do not express thoughts very well. They always become a little different immediately
+                            after they are expressed,
+                            a little distorted, a little foolish.
+                        </p>
+                        <p class="text-muted">
+                            He had a word, too, but he didn't use it. But he'd been used to words for a long time. I
+                            knew that the word was like the other,
+                            just a shape but not a soul. That was the thing that broke them.
+                        </p>
+                        <div class="row text-center mt-4">
+                            <div class="col-6 col-md-3 mb-3">
+                                <h4 class="fw-bold mb-0" style="color: var(--primary-color);">600</h4>
+                                <small class="text-muted">Indoor seats</small>
+                            </div>
+                            <div class="col-6 col-md-3 mb-3">
+                                <h4 class="fw-bold mb-0" style="color: var(--primary-color);">700</h4>
+                                <small class="text-muted">Square meters of space</small>
+                            </div>
+                            <div class="col-6 col-md-3 mb-3">
+                                <h4 class="fw-bold mb-0" style="color: var(--primary-color);">1.2</h4>
+                                <small class="text-muted">Million guests yearly</small>
+                            </div>
+                            <div class="col-6 col-md-3 mb-3">
+                                <h4 class="fw-bold mb-0" style="color: var(--primary-color);">110</h4>
+                                <small class="text-muted">Staff members</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <div id="#footer-form"></div>
+        <footer>
+            <div class="vector d-lg-flex d-none">
+                <svg width="300" height="372" viewBox="0 0 300 372" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <circle cx="-20" cy="320" r="270" stroke-width="100"></circle>
+                    </g>
+                </svg>
+            </div>
+            <div class="container-lg container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-top ">
+                            <div class="row g-lg-4 gy-5 ">
+                                <div class="col-xl-6 col-lg-6 col-md-8 d-flex justify-content-lg-start">
+                                    <div class="footer-widget">
+                                        <div class="subscribed-area">
+                                            <h3>Request A Call Back</h3>
+                                            <form action="send_email.php" method="post">
+                                                <div class="form-inner">
+                                                    <input type="text" name="name" placeholder="Name" required>
+                                                </div>
+                                                <div class="form-inner">
+                                                    <input type="text" name="company" placeholder="Company Name"
+                                                        required>
+                                                </div>
+                                                <div class="form-inner">
+                                                    <input type="email" name="email" placeholder="Email" required>
+                                                </div>
+                                                <div class="form-inner">
+                                                    <input type="tel" name="contact" placeholder="Contact number"
+                                                        maxlength="13" required>
+                                                </div>
+                                                <div class="form-inner full-width" style="height: auto;">
+                                                    <textarea name="message" rows="1" placeholder="Message"
+                                                        required></textarea>
+                                                </div>
+
+                                                <!-- Google reCAPTCHA -->
+                                                <div class="g-recaptcha"
+                                                    data-sitekey="6LdYrHUqAAAAAGcGwhB0cLb2juYcPYwMbHru2gdv"></div>
+
+                                                <button type="submit">Submit</button>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-sm-6 d-flex justify-content-lg-center">
+                                    <div class="footer-widget">
+                                        <div class="widget-title">
+                                            <h4>Company</h4>
+                                        </div>
+                                        <div class="menu-container">
+                                            <ul>
+                                                <li>
+                                                    <a href="about-the-company.html">About Us
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                            viewBox="0 0 10 10">
+                                                            <path
+                                                                d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="clients-success-stories.html">Case Study
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                            viewBox="0 0 10 10">
+                                                            <path
+                                                                d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="industry-blogs.html">Blogs
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                            viewBox="0 0 10 10">
+                                                            <path
+                                                                d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="careers.html">Careers <span>Hiring</span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                            viewBox="0 0 10 10">
+                                                            <path
+                                                                d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="enquire-now.html">Contact Us
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                            viewBox="0 0 10 10">
+                                                            <path
+                                                                d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="our-privacy-policy.html">Privacy Policy
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                            viewBox="0 0 10 10">
+                                                            <path
+                                                                d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-sm-6 d-flex justify-content-lg-end">
+                                    <div class="footer-widget">
+                                        <div class="widget-title">
+                                            <h4>Industries</h4>
+                                        </div>
+                                        <div class="menu-container">
+                                            <ul>
+                                                <li>
+                                                    <a href="b2b-digital-marketing-agency.html">Business 2 Business
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                            viewBox="0 0 10 10">
+                                                            <path
+                                                                d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="manufacturing.html">Manufacturing
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                            viewBox="0 0 10 10">
+                                                            <path
+                                                                d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="digital-marketing-services-for-engineering-brands.html">Engineering
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                            viewBox="0 0 10 10">
+                                                            <path
+                                                                d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="digital-marketing-for-logistics.html">Logistics
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                            viewBox="0 0 10 10">
+                                                            <path
+                                                                d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="digital-marketing-for-chemical-industries.html">Chemical
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                            viewBox="0 0 10 10">
+                                                            <path
+                                                                d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="real-estate-digital-marketing-services.html">Real Estate
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                            viewBox="0 0 10 10">
+                                                            <path
+                                                                d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="digital-marketing-for-consumer-goods.html">Consumer Goods
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                                            viewBox="0 0 10 10">
+                                                            <path
+                                                                d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-end ">
+                                    <div class="col-xl-7 d-flex justify-content-lg-end">
+                                        <div class="solial-account">
+                                            <ul>
+                                                <li><a href="https://www.facebook.com/the4psolutions/"
+                                                        target="_blank">Facebook</a></li>
+                                                <li><a href="https://www.youtube.com/channel/UCthUS6h2ov9zG2oLe1e4IDg"
+                                                        target="_blank">YouTube</a></li>
+                                                <li><a href="https://www.linkedin.com/company/the-4p-solutions/"
+                                                        target="_blank">LinkedIn</a></li>
+                                                <li><a href="https://www.instagram.com/the4psolutions/"
+                                                        target="_blank">Instagram</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="footer-logo-contact-wrap">
+                                        <div class="footer-logo">
+                                            <a href="index.html"><img src="assets/svg/4p-footer-logo.svg"
+                                                    alt="footer-logo"></a>
+                                        </div>
+                                        <ul class="footer-contact">
+                                            <li class="single-contact">
+                                                <span>Phone</span>
+                                                <h5><a href="tel:+918591937177">+918591937177</a></h5>
+                                            </li>
+                                            <li class="single-contact">
+                                                <span>Email Now</span>
+                                                <h5><a href="mailto:mktg@the4psolutions.com"><span class="__cf_email__"
+                                                            data-cfemail="1b72757d745b7e637a766b777e7c767a727735787476">mktg@the4psolutions.com</span></a>
+                                                </h5>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-btm">
+                            <div class="copyright-area">
+                                <p>Copyright © 2025 <a href="#">The 4P Solutions</a></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+    <script>
+        function enableSubmitButtonForm1() {
+            document.getElementById("submit-button").disabled = false;
+        }
+
+        // Function called when reCAPTCHA expires or is not ticked
+        function disableSubmitButtonForm1() {
+            document.getElementById("submit-button").disabled = true;
+        }
+
+        // Make the functions globally accessible
+        window.enableSubmitButtonForm1 = enableSubmitButtonForm1;
+        window.disableSubmitButtonForm1 = disableSubmitButtonForm1;
+
+        // Validate on form submit to ensure reCAPTCHA is checked
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            var recaptchaResponse = grecaptcha.getResponse();
+            if (recaptchaResponse) {
+                alert("Please complete the reCAPTCHA.");
+                event.preventDefault();
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let bgImage = document.getElementById("backgroundImage");
+
+            if (window.innerWidth <= 991) {
+                // Set mobile image source dynamically
+                bgImage.src = "assets/img/home/4P-Website-Page-Banner-1-.png";
+            }
+        });
+    </script>
+    <script>
+        function openForm(formId) {
+            // Hide all forms
+            document.querySelectorAll('.form-popup').forEach(form => {
+                form.style.display = "none";
+            });
+            // Show the selected form
+            document.getElementById(formId).style.display = "block";
+        }
+
+        function closeForm() {
+            // Hide all forms
+            document.querySelectorAll('.form-popup').forEach(form => {
+                form.style.display = "none";
+            });
+        }
+
+        function playopenForm() {
+            document.getElementById("playbookForm").style.display = "block";
+        }
+
+        function playcloseForm() {
+            document.getElementById("playbookForm").style.display = "none";
+        }
+    </script>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+
+    <script src="assets/js/waypoints.min.js"></script>
+
+    <script src="assets/js/jquery.counterup.min.js"></script>
+
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
+        integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- GSAP TweenMax CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/SmoothScroll.js"></script>
+    <script src="assets/js/simpleParallax.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
+
+    <script src="assets/js/jquery.marquee.min.js"></script>
+    <!-- Linking Swiper Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!-- Plyr CSS -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Plyr JS -->
+    <script src="https://cdn.plyr.io/3.6.8/plyr.polyfilled.js"></script>
+
+
+    <script src="assets/js/main.js"></script>
+
+
+
+</body>
+
+
+</html>
