@@ -2849,6 +2849,17 @@ Team Member
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.040);
 }
 
+.team .row .team-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.team .row .card .card-body {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .team-card:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.060);
     border: none;
@@ -2881,7 +2892,12 @@ Team Member
 .team-card p {
     margin-top: 0 auto 20px;
 }
-
+.team .row .team-card-content {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 /* ------------------------------------------------
         Video Carousel
